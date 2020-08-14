@@ -94,4 +94,42 @@ public class tddTest1 {
     public void testIdentityRate() {
         assertEquals(1, new Bank().rate("USD", "USD"));
     }
+
+    @DisplayName("서로 다른통화 더하기")
+    @Test
+    public void testMixedAddtion() {
+        Expression fiveBucks = Money.dollar(5);
+        Expression tenFrancs = Money.franc(10);
+        Bank bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        Money result = bank.reduce(
+                fiveBucks.plus(tenFrancs), "USD"
+        );
+        assertEquals(Money.dollar(10), result);
+    }
+
+    @DisplayName("드디어, 추상화 1")
+    @Test
+    public void testSumPlusMoney() {
+        Expression fiveBucks = Money.dollar(5);
+        Expression tenFrancs = Money.franc(10);
+        Bank bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        Expression sum = new Sum(fiveBucks, tenFrancs).plus(fiveBucks);
+        Money result = bank.reduce(sum, "USD");
+        assertEquals(Money.dollar(15), result);
+    }
+
+    @DisplayName("드디어 추상화 2")
+    @Test
+    public void testSumTimes() {
+        Expression fiveBucks = Money.dollar(5);
+        Expression tenFrancs = Money.franc(10);
+        Bank bank = new Bank();
+        bank.addRate("CHF", "USD", 2);
+        Expression sum = new Sum(fiveBucks, tenFrancs).times(2);
+        Money result = bank.reduce(sum, "USD");
+        assertEquals(Money.dollar(20), result);
+    }
+
 }
