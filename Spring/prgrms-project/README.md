@@ -1,7 +1,8 @@
 
 # [6기] 웹 백엔드 시스템 구현 스터디(SpringBoot)
 
-SpringBoot프로젝트를만들어보세요!(버전2.3.3)
+# SpringBoot프로젝트를만들어보세요!(버전2.3.3)
+
 ○ https://start.spring.io/를이용하시거나STS또는IntelliJ를활용하세요.
 ○ Maven정보
 ■ groupId:com.github.prgrms,artifactId:social-server,packaging:jar
