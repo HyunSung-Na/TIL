@@ -1,6 +1,5 @@
 package com.github.prgrms.socialserver.service;
 
-import com.github.prgrms.socialserver.domain.Email;
 import com.github.prgrms.socialserver.domain.SignupRequest;
 import com.github.prgrms.socialserver.domain.User;
 import com.github.prgrms.socialserver.repository.UserRepository;
@@ -29,30 +28,18 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public User findOne(Email email) throws DataAccessException {
-        User user = userRepository.findOne(email);
+    public User findOne(Long seq) throws DataAccessException {
+        User user = userRepository.findOne(seq);
         return user;
     }
 
     @Override
-    public User save(@Valid SignupRequest signupRequest) throws DataAccessException {
-        KeyHolder keyHolder = new GeneratedKeyHolder();
-        LocalDateTime timestamp = LocalDateTime.now();
-
-        User user = new User.Builder()
-                .seq((Long) keyHolder.getKey())
-                .email(signupRequest.getPrincipal())
-                .passwd(signupRequest.getCredentials())
-                .login_count(0)
-                .last_login_at(timestamp)
-                .create_at(timestamp)
-                .build();
-
+    public User save(@Valid User user) throws DataAccessException {
         return userRepository.save(user);
     }
 
     @Override
-    public void delete(Email email) throws DataAccessException {
+    public void delete(String email) throws DataAccessException {
         userRepository.delete(email);
     }
 }

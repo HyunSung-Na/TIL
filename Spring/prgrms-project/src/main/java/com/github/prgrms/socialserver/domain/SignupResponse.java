@@ -1,36 +1,20 @@
 package com.github.prgrms.socialserver.domain;
 
-import java.time.LocalDateTime;
-
 public class SignupResponse {
 
-    private Email email;
+    private final boolean success;
+    private final String response;
 
-    private String passwd;
-
-    private int login_count;
-
-    private LocalDateTime last_login_at;
-
-    private LocalDateTime create_at;
-
-    public Email getEmail() {
-        return email;
+    public SignupResponse(boolean success, String response) {
+        this.success = success;
+        this.response = response;
     }
 
-    public String getPasswd() {
-        return passwd;
+    public boolean isSuccess() {
+        return success;
     }
 
-    public int getLogin_count() {
-        return login_count;
-    }
-
-    public LocalDateTime getLast_login_at() {
-        return last_login_at;
-    }
-
-    public LocalDateTime getCreate_at() {
-        return create_at;
+    public String getResponse() {
+        return response;
     }
 }

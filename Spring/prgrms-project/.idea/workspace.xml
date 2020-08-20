@@ -33,7 +33,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0b509ee-a7fb-41bb-bef8-86089e8ee3df" name="Default Changelist" comment="" />
+    <list default="true" id="a0b509ee-a7fb-41bb-bef8-86089e8ee3df" name="Default Changelist" comment="1주차 과제(미완성)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,13 +71,103 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.github.prgrms.socialserver.domain" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.SocialServerApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SocialServerApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prgrms-web-bjs-6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.prgrms.socialserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.prgrms.socialserver" />
+      <option name="MAIN_CLASS_NAME" value="com.github.prgrms.socialserver.SocialServerApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prgrms-web-bjs-6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.prgrms.socialserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.prgrms.socialserver" />
+      <option name="MAIN_CLASS_NAME" value="com.github.prgrms.socialserver.UserControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.CreateUser_JSON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prgrms-web-bjs-6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.prgrms.socialserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.prgrms.socialserver" />
+      <option name="MAIN_CLASS_NAME" value="com.github.prgrms.socialserver.UserControllerTest" />
+      <option name="METHOD_NAME" value="CreateUser_JSON" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.SearchAllUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prgrms-web-bjs-6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.prgrms.socialserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.prgrms.socialserver" />
+      <option name="MAIN_CLASS_NAME" value="com.github.prgrms.socialserver.UserControllerTest" />
+      <option name="METHOD_NAME" value="SearchAllUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.detail_user_id" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prgrms-web-bjs-6" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.prgrms.socialserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.prgrms.socialserver" />
+      <option name="MAIN_CLASS_NAME" value="com.github.prgrms.socialserver.UserControllerTest" />
+      <option name="METHOD_NAME" value="detail_user_id" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SocialServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="prgrms-web-bjs-6" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.prgrms.socialserver.SocialServerApplication" />
@@ -85,6 +175,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserControllerTest.detail_user_id" />
+        <item itemvalue="JUnit.UserControllerTest.SearchAllUser" />
+        <item itemvalue="JUnit.UserControllerTest.CreateUser_JSON" />
+        <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.SocialServerApplicationTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,8 +203,22 @@
       <workItem from="1597729481311" duration="641000" />
       <workItem from="1597734399021" duration="6015000" />
       <workItem from="1597744704383" duration="6528000" />
-      <workItem from="1597755168288" duration="4985000" />
+      <workItem from="1597755168288" duration="5305000" />
+      <workItem from="1597761432767" duration="627000" />
+      <workItem from="1597762399036" duration="2285000" />
+      <workItem from="1597823565568" duration="2036000" />
+      <workItem from="1597837620626" duration="11564000" />
+      <workItem from="1597882058338" duration="13234000" />
+      <workItem from="1597910189593" duration="2063000" />
     </task>
+    <task id="LOCAL-00001" summary="1주차 과제(미완성)">
+      <created>1597895467266</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597895467266</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +235,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1주차 과제(미완성)" />
+    <option name="LAST_COMMIT_MESSAGE" value="1주차 과제(미완성)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="133" y="0" key="#Intentions" timestamp="1597757970272">
@@ -144,38 +261,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="132" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.680@0.0.1280.680" timestamp="1597585373628" />
-    <state width="1229" height="467" key="GridCell.Tab.0.bottom" timestamp="1597760114121">
+    <state x="306" y="30" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597824852819">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597760114121" />
-    <state width="1229" height="467" key="GridCell.Tab.0.center" timestamp="1597760114121">
+    <state x="306" y="30" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1597824852819" />
+    <state width="1229" height="467" key="GridCell.Tab.0.bottom" timestamp="1597896435706">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597760114121" />
-    <state width="1229" height="467" key="GridCell.Tab.0.left" timestamp="1597760114121">
+    <state width="1229" height="467" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597896435706" />
+    <state width="1229" height="467" key="GridCell.Tab.0.center" timestamp="1597896435705">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597760114121" />
-    <state width="1229" height="467" key="GridCell.Tab.0.right" timestamp="1597760114121">
+    <state width="1229" height="467" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597896435705" />
+    <state width="1229" height="467" key="GridCell.Tab.0.left" timestamp="1597896435705">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597760114121" />
-    <state width="1229" height="467" key="GridCell.Tab.1.bottom" timestamp="1597760114122">
+    <state width="1229" height="467" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597896435705" />
+    <state width="1229" height="467" key="GridCell.Tab.0.right" timestamp="1597896435705">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597760114122" />
-    <state width="1229" height="467" key="GridCell.Tab.1.center" timestamp="1597760114121">
+    <state width="1229" height="467" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597896435705" />
+    <state width="1229" height="467" key="GridCell.Tab.1.bottom" timestamp="1597896435702">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1597760114121" />
-    <state width="1229" height="467" key="GridCell.Tab.1.left" timestamp="1597760114121">
+    <state width="1229" height="467" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597896435702" />
+    <state width="1229" height="467" key="GridCell.Tab.1.center" timestamp="1597896435702">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1597760114121" />
-    <state width="1229" height="467" key="GridCell.Tab.1.right" timestamp="1597760114121">
+    <state width="1229" height="467" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1597896435702" />
+    <state width="1229" height="467" key="GridCell.Tab.1.left" timestamp="1597896435702">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1597760114121" />
+    <state width="1229" height="467" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1597896435702" />
+    <state width="1229" height="467" key="GridCell.Tab.1.right" timestamp="1597896435702">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1229" height="467" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1597896435702" />
     <state width="286" height="678" key="HiddenNamespacesPopup" timestamp="1597480675896">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -184,10 +305,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="56" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1597729889520" />
-    <state x="392" y="39" key="refactoring.ChangeSignatureDialog" timestamp="1597738283125">
+    <state x="133" y="5" key="Vcs.Push.Dialog.v2" timestamp="1597895484342">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="392" y="39" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1597738283125" />
+    <state x="133" y="5" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1597895484342" />
+    <state x="306" y="0" key="extract.method.dialog" timestamp="1597763476763">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="306" y="0" key="extract.method.dialog/0.0.1280.680@0.0.1280.680" timestamp="1597763476763" />
+    <state x="392" y="39" key="refactoring.ChangeSignatureDialog" timestamp="1597889219951">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="392" y="39" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1597889219951" />
     <state x="219" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1597748964697">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

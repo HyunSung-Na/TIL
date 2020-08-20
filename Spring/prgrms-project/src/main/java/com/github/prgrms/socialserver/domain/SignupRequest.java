@@ -1,23 +1,34 @@
 package com.github.prgrms.socialserver.domain;
 
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Pattern;
 
 public class SignupRequest {
 
     @NotEmpty(message = "email is required")
-    @Pattern(regexp = "^[a-zA-Z0-9_!#$%&'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$", message = "Invalid email")
-    private Email principal;
+    @Email
+    private String principal;
 
     @NotEmpty(message = "password is required")
     private String credentials;
 
-    public Email getPrincipal() {
-        Email principal = this.principal;
+    public SignupRequest(User user) {
+        this.principal = user.getEmail();
+        this.credentials = user.getPasswd();
+    }
+
+
+    public SignupRequest(String principal, String credentials) {
+        this.principal = principal;
+        this.credentials = credentials;
+    }
+
+    public String getPrincipal() {
+        String principal = this.principal;
         return principal;
     }
 
-    public void setPrincipal(Email principal) {
+    public void setPrincipal(String principal) {
         this.principal = principal;
     }
 
@@ -27,5 +38,12 @@ public class SignupRequest {
 
     public void setCredentials(String credentials) {
         this.credentials = credentials;
+    }
+
+    public User toEntity() {
+        return new User.Builder()
+                .email(principal)
+                .passwd(credentials)
+                .build();
     }
 }

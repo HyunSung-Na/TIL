@@ -1,6 +1,8 @@
 package com.github.prgrms.socialserver.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.junit.platform.commons.util.ToStringBuilder;
+import org.springframework.jdbc.support.KeyHolder;
 
 import java.sql.Date;
 import java.time.LocalDateTime;
@@ -10,8 +12,9 @@ public class User {
 
     private final Long seq;
 
-    private final Email email;
+    private final String email;
 
+    @JsonIgnore
     private String passwd;
 
     private int login_count;
@@ -20,11 +23,11 @@ public class User {
 
     private final LocalDateTime create_at;
 
-    public User(long seq, Email email, String passwd, int login_count, Date last_login_at, Date create_at){
+    public User(long seq, String email, String passwd, int login_count, Date last_login_at, Date create_at){
         this(null, email, passwd, 0, null, null);
     }
 
-    public User(Long seq, Email email, String passwd, int login_count, LocalDateTime last_login_at, LocalDateTime create_at) {
+    public User(Long seq, String email, String passwd, int login_count, LocalDateTime last_login_at, LocalDateTime create_at) {
 
         this.seq = seq;
         this.email = email;
@@ -43,7 +46,7 @@ public class User {
         return seq;
     }
 
-    public Email getEmail() {
+    public String getEmail() {
         return email;
     }
 
@@ -87,9 +90,10 @@ public class User {
                 .toString();
     }
 
+
     public static class Builder {
         private Long seq;
-        private Email email;
+        private String email;
         private String passwd;
         private int login_count;
         private LocalDateTime last_login_at;
@@ -112,7 +116,7 @@ public class User {
             return this;
         }
 
-        public Builder email(Email email) {
+        public Builder email(String email) {
             this.email = email;
             return this;
         }

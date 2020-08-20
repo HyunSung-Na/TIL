@@ -1,6 +1,5 @@
 package com.github.prgrms.socialserver.service;
 
-import com.github.prgrms.socialserver.domain.Email;
 import com.github.prgrms.socialserver.domain.SignupRequest;
 import com.github.prgrms.socialserver.domain.User;
 import org.springframework.dao.DataAccessException;
@@ -11,9 +10,9 @@ public interface UserService {
 
     List<User> findAll() throws DataAccessException;
 
-    User findOne(Email email) throws DataAccessException;
+    User findOne(Long seq) throws DataAccessException;
 
-    User save(SignupRequest signupRequest) throws DataAccessException;
+    User save(User user) throws DataAccessException;
 
-    void delete(Email email) throws DataAccessException;
+    void delete(String email) throws DataAccessException;
 }
