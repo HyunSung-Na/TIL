@@ -1,18 +1,23 @@
 
-# [6기] 웹 백엔드 시스템 구현 스터디(SpringBoot)의 깃 저장소
-## with. 해리 & 잭슨
+# [6기] 웹 백엔드 시스템 구현 스터디(SpringBoot)
 
-프로그래머스와 해리, 잭슨이 운영하는 '웹 백엔드 시스템 구현 스터디(SpringBoot) 6기'반을 위한 프라이빗 저장소에요. 
-아래에 간단히 스터디 관련한 주요 내용을 요약해둘게요.
 
-- 스터디 시작: 2020-08-13(목)
-- 스터디 종료: 2020-09-17(목) 총 4주
-- 세션: 매주 목요일 20:30
-- 과정 관련 문의사항: 크리시에게 슬랙 DM, 또는 02-539-1885, learn@programmers.co.kr
-- 환불 등 결제 관련 문의사항: contact@programmers.co.kr
 
-미션 요구사항, 세션 녹화본, 세션에서 쓴 슬라이드 등을 공유하는 학습 공간은 [여기를 클릭](https://school.programmers.co.kr/courses/10655) 하세요.
+#### SpringBoot프로젝트를만들어보세요!(버전2.3.3)
 
-----
-
-이 저장소와 학습 공간(school.programmers.co.kr)은 스터디 기간이 지나도 닫지 않습니다. 추후에 언젠가, 이 스터디에서 진행했던 내용을 참고하고 싶을 때 활용하시면 된답니다. 하지만 이보다 더 중요한건 **과정이 진행되는동안 본인이 할 수 있는 만큼 최고로 집중하는 것** 이니, 히스토리가 남고 안남고와는 상관 없이 열심히 참여해주세요.
+-  https://start.spring.io/를이용하시거나STS또는IntelliJ를활용하세요. 
+- Maven정보
+  ■ groupId:com.github.prgrms,artifactId:social-server,packaging:jar
+  ○ “Web,Jdbc,H2Database”Dependency가필요로합니다.
+- UserEntity(다음장)에해당하는다음기능을만들어보세요.
+  ○ HTTPGETapi/users를호출하면User정보가JSON형태로목록이반환됩니다.(H2DB에서읽어서)
+  ○ HTTPGETapi/users/:userId를호출하면User정보가JSON형태로반환됩니다.(H2DB에서읽어서)
+  ○ POSTapi/users/join에다음과같은JSON을전달하면User정보가H2DB에저장됩니다.그리고성공메시지가
+  Response로반환됩니다.
+- 요청JSON:{“principal”:“이메일”,“credentials”:“패스워드"}
+- DTO에대한개념을찾아보고요청에대한DTO를만들어보세요.
+- 응답JSON:{“success”:true,“response”:“가입완료"}
+- 응답에대한DTO도고려해보세요.
+- HTTP요청을처리하는컨트롤러에대한테스트를작성하세요.
+- 해당컨트롤러에서사용하는서비스는Mock서비스로서실제DB를사용하지않고메모리상에서처리가되도록
+  구현하고컨트롤러가이서비스를테스트환경에서만사용할수있게해주세요.
