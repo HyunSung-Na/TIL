@@ -1,10 +1,9 @@
 package com.github.prgrms.socialserver.repository;
 
+import com.github.prgrms.socialserver.domain.Email;
 import com.github.prgrms.socialserver.domain.User;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.PreparedStatementSetter;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
@@ -13,20 +12,22 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.sql.DataSource;
 import javax.validation.Valid;
-import java.sql.Timestamp;
-import java.time.LocalDateTime;
+import java.sql.PreparedStatement;
 import java.util.List;
+
+import static com.github.prgrms.socialserver.util.DateTimeUtils.dateTimeOf;
+import static com.github.prgrms.socialserver.util.DateTimeUtils.timestampOf;
 
 @Repository
 @Transactional(readOnly = true)
 public class UserRepositoryImpl implements UserRepository {
 
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
 
-    @Autowired
-    public void setDataSource(DataSource dataSource) {
-        this.jdbcTemplate = new JdbcTemplate(dataSource);
+    public UserRepositoryImpl (JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
     }
+
 
     @Override
     public boolean existsByEmail(String principal) {
@@ -52,10 +53,23 @@ public class UserRepositoryImpl implements UserRepository {
     public User save(@Valid User user) throws DataAccessException {
         final String query =
                 "insert into users (seq ,email, passwd, login_count, last_login_at, create_at)" +
-                        " values(?, ?, ?, ?, ?, ?)";
+                        " values(null, ?, ?, ?, ?, ?)";
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+        jdbcTemplate.update(conn ->{
+            PreparedStatement ps = conn.prepareStatement(query, new String[]{"seq"});
+            ps.setString(1, user.getEmail().getAddress());
+            ps.setString(2, user.getPasswd());
+            ps.setInt(3, user.getLogin_count());
+            ps.setTimestamp(4, timestampOf(user.getLast_login_at().orElse(null)));
+            ps.setTimestamp(5, timestampOf(user.getCreate_at()));
+            return ps;
+        }, keyHolder);
 
-        return (User)jdbcTemplate.queryForObject(query, userRowMapper());
-
+        Number key = keyHolder.getKey();
+        long generatedSeq= key != null ? key.longValue() : -1;
+        return new User.Builder(user)
+                .seq(generatedSeq)
+                .build();
     }
 
     @Override
@@ -66,16 +80,13 @@ public class UserRepositoryImpl implements UserRepository {
 
     private static RowMapper<User> userRowMapper() {
         return (rs, rowNum) -> {
-            KeyHolder keyHolder = new GeneratedKeyHolder();
-            Timestamp lastLogin = rs.getTimestamp("last_login_at");
-            LocalDateTime localDateTime = lastLogin == null ? null : lastLogin.toLocalDateTime();
             User user = new User.Builder()
-                    .seq(rs.getLong(String.valueOf(keyHolder)))
-                    .email(rs.getString("email"))
+                    .seq(rs.getLong("seq"))
+                    .email(new Email(rs.getString("email")))
                     .passwd(rs.getString("passwd"))
                     .login_count(rs.getInt("login_count"))
-                    .last_login_at(localDateTime)
-                    .create_at(rs.getTimestamp("create_at").toLocalDateTime())
+                    .last_login_at(dateTimeOf(rs.getTimestamp("last_login_at")))
+                    .create_at(dateTimeOf(rs.getTimestamp("create_at")))
                     .build();
             return user;
         };

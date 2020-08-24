@@ -8,9 +8,7 @@ import java.util.List;
 
 public interface UserRepository {
 
-
     boolean existsByEmail(String principal);
-
 
     List<User> findAll() throws DataAccessException;
 

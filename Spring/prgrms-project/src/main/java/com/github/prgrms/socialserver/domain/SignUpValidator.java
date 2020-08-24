@@ -1,5 +1,6 @@
 package com.github.prgrms.socialserver.domain;
 
+import com.github.prgrms.socialserver.controller.SignupRequest;
 import com.github.prgrms.socialserver.repository.UserRepository;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;

@@ -2,17 +2,19 @@ package com.github.prgrms.socialserver.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.junit.platform.commons.util.ToStringBuilder;
-import org.springframework.jdbc.support.KeyHolder;
 
 import java.sql.Date;
 import java.time.LocalDateTime;
 import java.util.Objects;
+import java.util.Optional;
+
+import static java.util.Optional.ofNullable;
 
 public class User {
 
     private final Long seq;
 
-    private final String email;
+    private final Email email;
 
     @JsonIgnore
     private String passwd;
@@ -23,11 +25,11 @@ public class User {
 
     private final LocalDateTime create_at;
 
-    public User(long seq, String email, String passwd, int login_count, Date last_login_at, Date create_at){
-        this(null, email, passwd, 0, null, null);
+    public User(Email email, String password) {
+        this(null, email, password, 0, null, null);
     }
 
-    public User(Long seq, String email, String passwd, int login_count, LocalDateTime last_login_at, LocalDateTime create_at) {
+    public User(Long seq, Email email, String passwd, int login_count, LocalDateTime last_login_at, LocalDateTime create_at) {
 
         this.seq = seq;
         this.email = email;
@@ -46,7 +48,7 @@ public class User {
         return seq;
     }
 
-    public String getEmail() {
+    public Email getEmail() {
         return email;
     }
 
@@ -58,8 +60,8 @@ public class User {
         return login_count;
     }
 
-    public LocalDateTime getLast_login_at() {
-        return last_login_at;
+    public Optional<LocalDateTime> getLast_login_at() {
+        return ofNullable(last_login_at);
     }
 
     public LocalDateTime getCreate_at() {
@@ -93,7 +95,7 @@ public class User {
 
     public static class Builder {
         private Long seq;
-        private String email;
+        private Email email;
         private String passwd;
         private int login_count;
         private LocalDateTime last_login_at;
@@ -116,7 +118,7 @@ public class User {
             return this;
         }
 
-        public Builder email(String email) {
+        public Builder email(Email email) {
             this.email = email;
             return this;
         }

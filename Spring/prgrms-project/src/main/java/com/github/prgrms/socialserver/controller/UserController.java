@@ -1,6 +1,6 @@
 package com.github.prgrms.socialserver.controller;
 
-import com.github.prgrms.socialserver.domain.SignupRequest;
+import com.github.prgrms.socialserver.domain.Email;
 import com.github.prgrms.socialserver.domain.User;
 import com.github.prgrms.socialserver.service.UserService;
 import org.springframework.web.bind.annotation.*;
@@ -29,8 +29,8 @@ public class UserController {
 
     @PostMapping("/api/users/join")
     public User createUser(@Valid @RequestBody SignupRequest signupRequest) {
-        User signUp =  signupRequest.toEntity();
-        return userService.save(signUp);
+        User user = userService.save(new Email(signupRequest.getPrincipal()), signupRequest.getCredentials());
+        return user;
     }
 
     @PostMapping("/api/users/delete/{email}")

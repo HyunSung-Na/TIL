@@ -11,29 +11,56 @@
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:class" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:class" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0b509ee-a7fb-41bb-bef8-86089e8ee3df" name="Default Changelist" comment="1주차 과제(미완성)" />
+    <list default="true" id="a0b509ee-a7fb-41bb-bef8-86089e8ee3df" name="Default Changelist" comment="1주차 과제(미완성)">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_29_0_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_2_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/controller/SignupRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prgrms-web-bjs-6.iml" beforeDir="false" afterPath="$PROJECT_DIR$/prgrms-web-bjs-6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/domain/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/domain/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/domain/SignUpValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/domain/SignUpValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/domain/SignupRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/domain/SignupResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/repository/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/repository/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/domain/Email.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/domain/Email.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/domain/SignUpValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/domain/SignUpValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/domain/SignupRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/domain/SignupResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/domain/User$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/domain/User$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/repository/UserRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/repository/UserRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/github/prgrms/socialserver/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../자바/TDD/TDD-python/Was_Run.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../자바/TDD/TDD-python/Was_Run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../자바/TDD/TDD-python/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../자바/TDD/TDD-python/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../자바/TDD/TDD-python/test_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../자바/TDD/TDD-python/test_case.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +75,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -58,6 +85,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1g7fM847pwg3o02mZjLsQ0nPTOb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -69,23 +97,34 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/github/prgrms/socialserver/domain" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ocean\TIL---Java\Spring\prgrms-project\src\main\java\com\github\prgrms\socialserver\domain" />
+      <recent name="C:\Users\ocean\TIL---Java\Spring\prgrms-project\src\main\java\com\github\prgrms\socialserver" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.github.prgrms.socialserver.controller" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.github.prgrms.socialserver.domain" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SocialServerApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,6 +249,8 @@
       <workItem from="1597837620626" duration="11564000" />
       <workItem from="1597882058338" duration="13234000" />
       <workItem from="1597910189593" duration="2063000" />
+      <workItem from="1597915657802" duration="1362000" />
+      <workItem from="1598252016270" duration="5347000" />
     </task>
     <task id="LOCAL-00001" summary="1주차 과제(미완성)">
       <created>1597895467266</created>
@@ -218,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597895467266</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1주차 과제(미완성)">
+      <created>1597915829782</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597915829782</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,10 +301,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1597583231038" />
-    <state x="399" y="0" key="#com.intellij.ide.util.MemberChooser" timestamp="1597759067127">
+    <state x="399" y="0" key="#com.intellij.ide.util.MemberChooser" timestamp="1598256947950">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="399" y="0" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1597759067127" />
+    <state x="399" y="0" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1598256947950" />
     <state x="132" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597585373628">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -265,58 +313,58 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="306" y="30" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1597824852819" />
-    <state width="1229" height="467" key="GridCell.Tab.0.bottom" timestamp="1597896435706">
+    <state width="1229" height="467" key="GridCell.Tab.0.bottom" timestamp="1598257289264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597896435706" />
-    <state width="1229" height="467" key="GridCell.Tab.0.center" timestamp="1597896435705">
+    <state width="1229" height="467" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598257289264" />
+    <state width="1229" height="467" key="GridCell.Tab.0.center" timestamp="1598257289264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1597896435705" />
-    <state width="1229" height="467" key="GridCell.Tab.0.left" timestamp="1597896435705">
+    <state width="1229" height="467" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598257289264" />
+    <state width="1229" height="467" key="GridCell.Tab.0.left" timestamp="1598257289264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1597896435705" />
-    <state width="1229" height="467" key="GridCell.Tab.0.right" timestamp="1597896435705">
+    <state width="1229" height="467" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598257289264" />
+    <state width="1229" height="467" key="GridCell.Tab.0.right" timestamp="1598257289264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1597896435705" />
-    <state width="1229" height="467" key="GridCell.Tab.1.bottom" timestamp="1597896435702">
+    <state width="1229" height="467" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598257289264" />
+    <state width="1229" height="467" key="GridCell.Tab.1.bottom" timestamp="1598257289264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1597896435702" />
-    <state width="1229" height="467" key="GridCell.Tab.1.center" timestamp="1597896435702">
+    <state width="1229" height="467" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598257289264" />
+    <state width="1229" height="467" key="GridCell.Tab.1.center" timestamp="1598257289264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1597896435702" />
-    <state width="1229" height="467" key="GridCell.Tab.1.left" timestamp="1597896435702">
+    <state width="1229" height="467" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1598257289264" />
+    <state width="1229" height="467" key="GridCell.Tab.1.left" timestamp="1598257289264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1597896435702" />
-    <state width="1229" height="467" key="GridCell.Tab.1.right" timestamp="1597896435702">
+    <state width="1229" height="467" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1598257289264" />
+    <state width="1229" height="467" key="GridCell.Tab.1.right" timestamp="1598257289264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1229" height="467" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1597896435702" />
+    <state width="1229" height="467" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1598257289264" />
     <state width="286" height="678" key="HiddenNamespacesPopup" timestamp="1597480675896">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="286" height="678" key="HiddenNamespacesPopup/0.0.1280.680@0.0.1280.680" timestamp="1597480675896" />
-    <state x="56" y="0" key="Maven.ArtifactSearchDialog" timestamp="1597729889520">
+    <state x="56" y="0" key="Maven.ArtifactSearchDialog" timestamp="1598253877646">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="56" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1597729889520" />
-    <state x="133" y="5" key="Vcs.Push.Dialog.v2" timestamp="1597895484342">
+    <state x="56" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.680@0.0.1280.680" timestamp="1598253877646" />
+    <state x="133" y="5" key="Vcs.Push.Dialog.v2" timestamp="1597915834555">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="133" y="5" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1597895484342" />
+    <state x="133" y="5" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1597915834555" />
     <state x="306" y="0" key="extract.method.dialog" timestamp="1597763476763">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="306" y="0" key="extract.method.dialog/0.0.1280.680@0.0.1280.680" timestamp="1597763476763" />
-    <state x="392" y="39" key="refactoring.ChangeSignatureDialog" timestamp="1597889219951">
+    <state x="392" y="39" key="refactoring.ChangeSignatureDialog" timestamp="1598255790108">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="392" y="39" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1597889219951" />
+    <state x="392" y="39" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1598255790108" />
     <state x="219" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1597748964697">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
