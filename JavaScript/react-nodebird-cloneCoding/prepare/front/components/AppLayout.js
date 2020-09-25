@@ -8,10 +8,9 @@ import { useSelector } from "react-redux";
 import UserProfile from '../components/UserProfile';
 import LoginForm from '../components/LoginForm';
 
-const SearchInput = styled(Input.Search)`
-       vertical-align: middle;
+const SearchInput = styled(Input.Search)`       
+vertical-align: middle;       
 `;
-// eslint-disable-next-line react/prop-types
 const AppLayout = ({children: children}) => {
     const isLoggedIn = useSelector((state) => state.user.isLoggedIn);
 
