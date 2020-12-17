@@ -20,7 +20,12 @@
 </br>
 </br>
 <a href="https://github.com/HyunSung-Na/TIL/tree/master/Books/%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8">
-오브젝트(2020/10~ )
+오브젝트(2020/10~ 11)
+</a>
+</br>
+</br>
+<a href="https://github.com/HyunSung-Na/TIL/tree/master/Books/EffectiveJava">
+이펙티브 자바(2020/12 ~)
 </a>
 </br>
 </br>
