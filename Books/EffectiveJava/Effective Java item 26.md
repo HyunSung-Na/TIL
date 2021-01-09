@@ -70,5 +70,62 @@ private final Collection<Stamp> stamps = ...;
 
 ```java
 // 런타임에 실패한다 - unsafeAdd 메서드가 로 타입을 사용
+public static void main(String[] args) {
+    List<String> strings = new ArrayList<>();
+    unsafeAdd(strings, Integer.valueOf(42));
+    String s = strings.get(0); // 컴파일러가 자동으로 형변환 코드를 넣어준다.
+}
+
+private static void unsafeAdd(List list, Object o) {
+    list.add(o);
+}
 ```
 
+이 코드는 컴파일은 되지만 로 타입인 List를 사용하여 다음과 같은 경고가 발생한다.
+
+```java
+Test.java:10: warning: [unchecked] unchecked call to add(E) as a
+member of the raw type List
+    list.add(0);
+```
+
+이 프로그램을 이대로 실행하면 strings.get(0)의 결과를 형변환하려 할 때 ClassCastException을 던진다. Integer를 String으로 변환하려 시도한 것이다.
+
+
+
+- 로 타입을 사용하지 말고 비한정적 와일드카드 타입을 대신 사용하는 게 좋다. 제네릭 타입을 쓰고 싶지만 실제 타입 매개변수가 무엇인지 신경 쓰고 싶지 않다면 물음표(?)를 사용하자. 예컨대 제네릭 타입인 Set<E>의 비한정적 와일드카드 타입은 Set<?>다. 이것이 어떤 타입이라도 담을 수 있는 가장 범용적인 매개변수화 Set타입이다.
+
+```java
+// 비한정적 와일드카드 타입을 사용하라. -타입 안전하며 유연하다.
+
+static int numElementsInCommon(Set<?> s1, Set<?> s2) { ,,, }
+```
+
+- 로 타입 컬렉션에는 아무 원소나 넣을 수 있으니 타입 불변식을 훼손하기 쉽다. 반면, **Collection<?>에는 (null 외에는) 어떤 원소도 넣을 수 없다.** 다른원소를 넣으려 하면 컴파일할 때 다음의 오류 메시지를 보게 될 것이다.
+
+
+
+:notebook_with_decorative_cover: 로 타입을 쓰지 말라는 규칙에도 소소한 예외가 몇 개 있다. **class 리터럴에는 로 타입을 써야 한다.** 자바 명세는 	class 리터럴에 매개변수화 타입을 사용하지 못하게 했다(배열과 기본 타입은 허용한다.)
+
+- 예를 들어 List.class, String[].class, int.class는 허용하고 List<String>.class와 List<?>.class는 허용하지 않는다.
+
+
+
+:notebook_with_decorative_cover: 두 번째 예외는 instanceof 연산자와 관련이 있다. 런타임에는 제네릭 타입 정보가 지워지므로 instanceof 연산	자는 비한정적 와일드카드 타입 이외의 매개변수화 타입에는 적용할 수 없다. 그리고 로 타입이든 비한정적 와일	드카드타입이든 instanceof는 완전히 똑같이 동작한다. 비한정적 와일드카드 타입의 꺾쇠괄호와 물음표는 아무	런 역할 없이 코드만 지저분하게 만드므로, 차라리 로 타입을 쓰는 편이 깔끔하다. **다음은 제네릭 타입에       	instanceof를 사용하는 올바른 예다.**
+
+```java
+// 로 타입을 써도 좋은 예 - instanceof 연산자
+
+if (o instanceof Set) {  // 로 타입
+    Set<?> s = (Set<?>) o; // 와일드카드 타입
+    ...
+}
+```
+
+- o의 타입이 Set임을 확인한 다음 와일드카드 타입인 Set<?>로 형변환해야 한다(로 타입인 Set이 아니다). 이는 검사 형변환이므로 컴파일러 경고가 뜨지 않는다.
+
+
+
+> 핵심 정리
+>
+> 로 타입을 사용하면 런타임에 예외가 일어날 수 있으니 사용하면 안 된다. 로 타입은 제네릭이 도입되기 이전 코드와의 호환성을 위해 제공될 뿐이다. 빠르게 훑어보자면, Set<Object>는 어떤 타입의 객체도 저장할 수 있는 매개변수화 타입이고, Set<?>는 모종의 타입 객체만 저장할 수 있는 와일드카드 타입이다. 그리고 이들의 로 타입은 Set은 제네릭 타입 시스템에 속하지 않는다. Set<Object>와 Set<?>는 안전하지만, 로 타입인 Set은 안전하지 않다.
