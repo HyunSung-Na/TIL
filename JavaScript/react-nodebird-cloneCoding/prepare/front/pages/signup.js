@@ -6,7 +6,7 @@ import Head from "next/head";
 import useInput from "../hooks/useInput";
 
 const ErrorMessage = styled.div`
-       color: red;
+  color: #ff0000;
 `;
 
 const Signup = () => {
