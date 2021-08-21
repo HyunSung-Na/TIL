@@ -10,6 +10,8 @@ export const initialState = {
             src: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FqJx25%2FbtqFztPOaG3%2FPtgvVOgxUwB7dcOkyIlTZk%2Fimg.png',
         }, {
             src: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FRjPWd%2FbtqFvJeCwUT%2FPS21y0Nn3kQQ5bP0yLcx81%2Fimg.png',
+        }, {
+            src: 'https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FqJx25%2FbtqFztPOaG3%2FPtgvVOgxUwB7dcOkyIlTZk%2Fimg.png',
         }],
         Comments: [{
             User: {
