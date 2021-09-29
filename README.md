@@ -26,7 +26,7 @@
   </a>
   </br>
   </br>
-- <a href="https://github.com/HyunSung-Na/TIL/tree/master/Books/EffectiveJava">
+- <a href="https://github.com/HyunSung-Na/TIL/tree/master/Books/%ED%81%B4%EB%A6%B0%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98">
   클린 아키텍처(2021/07 ~ 2021/09)
   </a>
   </br>
