@@ -33,7 +33,7 @@
   </br>
 
 
-### 🚀 JavaScript Study (2021 02. ~ current Time)
+### 🚀 JavaScript Study (2021 02. ~ 05)
 
 - [모던 자바스크립트 DeepDive (2021/02 ~ 2021/05)](https://github.com/HyunSung-Na/TIL/tree/master/JavaScript)
 
